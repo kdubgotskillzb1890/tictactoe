@@ -8,6 +8,9 @@
 $("#button1").click(function() {
     performLogic("#button1","#tile1");
 });
+let currentPlayer="x"
+let turns=0
+let gameover=false 
 
 $("#button2").click(function() {
     performLogic("#button2","#tile2");
