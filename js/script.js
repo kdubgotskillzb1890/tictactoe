@@ -11,6 +11,21 @@ $("#button1").click(function() {
 let currentPlayer="x"
 let turns=0
 let gameover=false 
+let horizontalwin=false
+
+function switchplayer() {
+currentPlayer="0"
+}
+function performLogic(button, tile) {
+ console.log(button)
+ $(button).remove();
+$(tile).text(currentPlayer);
+switchplayer();
+}
+function checkhorizontalwin(){
+  $("")
+} 
+
 
 $("#button2").click(function() {
     performLogic("#button2","#tile2");
@@ -43,4 +58,5 @@ $("#button8").click(function() {
 $("#button9").click(function() {
     performLogic("#button9","#tile9");
 });
+
 
